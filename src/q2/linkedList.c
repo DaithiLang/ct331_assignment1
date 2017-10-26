@@ -59,3 +59,32 @@ void deleteAfter(listElement* after){
   free(delete->data);
   free(delete);
 }
+
+int length(listElement* list){
+    int length = 0;
+    listElement* CurrNode = list;
+    while(CurrNode->next != NULL)
+    {
+        CurrNode = CurrNode->next;
+        length++; }
+  return length;
+}
+
+void push(listElement** list, char* data, size_t size){
+	listElement* newEl ;
+	newEl  = creatEl(data , size);
+	newEl->next = *list;
+}
+
+listElement* pop(listElement** list){
+	listElement* tmpList = *list;
+	if((*
+}
+
+void enqueue(listElement** list, char* data,size_t size){
+
+}
+
+listElement* dequeue(listElement* list){
+
+}
